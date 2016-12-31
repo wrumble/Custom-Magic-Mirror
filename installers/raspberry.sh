@@ -106,9 +106,9 @@ fi
 
 cd ~/MagicMirror  || exit
 echo -e "\e[96mInstalling dependencies ...\e[90m"
-npm install coffee-script
-npm install colorguard
-npm install jsonlint
+npm install -g coffee-script
+npm install -g colorguard
+npm install -g jsonlint
 if npm install; then
 	npm install python-shell
 	sudo pip install wordnik

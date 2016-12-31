@@ -1,3 +1,5 @@
+This is a slightly updted version of Magic Mirror2 i created for my older brother, run the Automatic installer below.
+
 ![MagicMirror²: The open source modular smart mirror platform. ](.github/header.png)
 
 <p align="center">
@@ -31,7 +33,7 @@ Electron, the app wrapper around MagicMirror², only supports the Raspberry Pi 2
 
 Execute the following command on your Raspberry Pi to install MagicMirror²:
 ````
-curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh | bash
+curl -sL https://raw.githubusercontent.com/wrumble/Custom-Magic-Mirror/master/installers/raspberry.sh | bash
 ````
 
 ### Manual Installation
