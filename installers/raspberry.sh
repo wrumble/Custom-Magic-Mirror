@@ -108,10 +108,10 @@ cd ~/MagicMirror  || exit
 echo -e "\e[96mInstalling dependencies ...\e[90m"
 
 if npm install; then
-	npm install -g coffee-script
-	npm install -g colorguard
-	npm install -g jsonlint
-	npm install python-shell
+	sudo npm install -g coffee-script
+	sudo npm install -g colorguard
+	sudo npm install -g jsonlint
+	sudo npm install python-shell
 	sudo pip install wordnik
 	echo -e "\e[92mDependencies installation Done!\e[0m"
 else
