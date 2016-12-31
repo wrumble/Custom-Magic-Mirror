@@ -97,7 +97,7 @@ if [ -d "$HOME/MagicMirror" ] ; then
 fi
 
 echo -e "\e[96mCloning MagicMirror ...\e[90m"
-if git clone https://github.com/MichMich/MagicMirror.git; then
+if git clone https://github.com/wrumble/Custom-Magic-Mirror.git; then
 	echo -e "\e[92mCloning MagicMirror Done!\e[0m"
 else
 	echo -e "\e[91mUnable to clone MagicMirror."
@@ -107,10 +107,11 @@ fi
 cd ~/MagicMirror  || exit
 echo -e "\e[96mInstalling dependencies ...\e[90m"
 
+sudo npm install -g coffee-script
+sudo npm install -g colorguard
+sudo npm install -g jsonlint
+
 if npm install; then
-	sudo npm install -g coffee-script
-	sudo npm install -g colorguard
-	sudo npm install -g jsonlint
 	sudo npm install python-shell
 	sudo pip install wordnik
 	echo -e "\e[92mDependencies installation Done!\e[0m"
